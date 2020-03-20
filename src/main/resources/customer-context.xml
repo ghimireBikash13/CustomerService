@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="hos1" class="com.hospital.rab3.pojos.Hospital">
+		<property name="nameOfHospital" value="NASH Hospital"></property>
+		<property name="address"
+			value="1534N welseyan Blvd, RockyMount, NC"></property>
+		<property name="phoneNo" value="2524364578"></property>
+
+		<property name="customernames">
+			<list>
+			<ref bean = "customer1"></ref>
+			<ref bean = "customer2"></ref>
+			<ref bean = "customer3"></ref>
+			</list>
+
+		</property>
+
+
+	</bean>
+	<bean id="customer1" class="com.hospital.rab3.pojos.CustomerService">
+		<property name="name" value="Bikash Ghimire"></property>
+		<property name="address" value="1010 Jefferys ct, RockyMount, NC"></property>
+		<property name="phoneNo" value="2524587743"></property>
+		<property name="SSN" value="998456789"></property>
+		<property name="diseasesType" value="Blood Pressure"></property>
+
+
+	</bean>
+	<bean id="customer2" class="com.hospital.rab3.pojos.CustomerService">
+		<property name="name" value="Nabin Singh"></property>
+		<property name="address" value="118 Meredith ct, RockyMount, NC"></property>
+		<property name="phoneNo" value="2534567789"></property>
+		<property name="SSN" value="8765674456"></property>
+		<property name="diseasesType" value="Diabetic"></property>
+
+
+	</bean>
+	<bean id="customer3" class="com.hospital.rab3.pojos.CustomerService">
+		<property name="name" value="Akash Giri"></property>
+		<property name="address" value="1223 Benvenue rd, RockyMount, NC"></property>
+		<property name="phoneNo" value="2525547789"></property>
+		<property name="SSN" value="645675589"></property>
+		<property name="diseasesType" value="Kidney Stone"></property>
+
+
+	</bean>
+
+
+</beans>
